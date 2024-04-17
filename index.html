@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav&Tabs</title>
+    <meta name="keywords" content="Front-End Develepment, Bootstrap" />
+    <meta name="describtion" content="Nav&Tabs(bootstrap)" />
+    <meta name="author" content="Shota.Oboladze" />
+    <!-- favicon-SHO -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicon/site.webmanifest" />
+    <!-- END favicon-SHO -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="container pt-5">
+    <!-- Navigation-1 -->
+    <nav class="nav flex-column border-1 rounded-1 shadow-sm mb-5 p-4">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </nav>
+    <!-- END Navigation-1 -->
+    <!-- Navigation-2 -->
+    <nav class="nav nav-pills nav-fill border-1 rounded-1 shadow-sm mb-5 p-4">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#">Much longer nav link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </nav>
+    <!-- END Navigation-2 -->
+    <!-- Navigation-3 -->
+    <nav class="nav nav-pills border-1 rounded-top-1 shadow-sm p-4 mb-1">
+      <div class="container border-1 rounded-1 bg-dark h-50"></div>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >Dropdown</a
+        >
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </nav>
+    <div class="container-fluid border-1 bg-body-tertiary px-1 mb-5">
+      <div
+        class="contaoner-fluid border-1 rounded-top-1 bg-body-secondary pt-5"
+      >
+        <br /><br /><br /><br />
+      </div>
+    </div>
+    <!-- ENDNavigation-3 -->
+    <!-- Navigation-4 -->
+    <nav class="border-1 rounded-1 shadow-sm p-3 mb-5">
+      <ul class="nav nav-tabs p-3" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content p-3 mb-4" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <strong
+            >This is some placeholder content the Home tab's associated
+            content.</strong
+          >
+          Clicking another tab will toggle the visibility of this one for the
+          next. The tab JavaScript swaps classes to control the content
+          visibility and styling. You can use it with tabs, pills, and any other
+          <span class="text-danger">.nav</span>-powered navigation.
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <strong>
+            This is some placeholder content the Profile tab's associated
+            content.
+          </strong>
+          Clicking another tab will toggle the visibility of this one for the
+          next. The tab JavaScript swaps classes to control the content
+          visibility and styling. You can use it with tabs, pills, and any other
+          <span class="text-danger">.nav</span>-powered navigation.
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <strong
+            >This is some placeholder content the Contact tab's associated
+            content.
+          </strong>
+          Clicking another tab will toggle the visibility of this one for the
+          next. The tab JavaScript swaps classes to control the content
+          visibility and styling. You can use it with tabs, pills, and any other
+          <span class="text-danger">.nav</span>-powered navigation.
+        </div>
+      </div>
+    </nav>
+    <!-- ENDNavigation-4 -->
+  </body>
+</html>
